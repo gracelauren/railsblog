@@ -1,0 +1,17 @@
+== Rails Blog
+
+This is a blogging application using Ruby on Rails.
+
+This application addresses the following user stories:
+
+* As a user, I want to be able to post my deepest thoughts in a blog entry with a title and date.
+
+* As a user, I want to be able to see all of my posts listed by title and have them link to each post, so I can revisit any entry later.
+
+* As a user, I want to be able to update or delete any of my posts, so that I can revise my thoughts later.
+
+* ...
+
+
+Run the programming by cloning the repository, cd-ing into folder and then running:
+<tt>rails s</tt>.

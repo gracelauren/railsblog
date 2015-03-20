@@ -1,0 +1,33 @@
+<% content_for(:title, "The Gouda Life | Post") %>
+
+<%= render('shared/header', title: @post.title) %>
+
+<p><%= link_to "Add a Comment", new_post_comment_path(@post) %></p>
+<p><%= link_to "Delete Post", post_path(@post),
+                              :data => {:confirm => "Are you sure?",
+                              :method => "delete"} %></p>
+<h4><%= @post.date %> : <%= @post.description %></h4>
+<p><%= link_to "Return to All Posts", posts_path %></p>
+
+
+<% if @post.comments.any? %>
+<h4>Comments:</h4>
+<ul>
+  <% @post.comments.each do |comment| %>
+  <li>
+    <li>  <%= comment.date %> : <%= comment.title %> |
+      <%= link_to "Edit", edit_post_comment_path(@post, comment) %> |
+      <%= link_to "Delete", post_comment_path(@post, comment),
+      :data => {:confirm => "You sure?",
+        :method => "delete"} %>
+      </li>
+      <ul>
+        <li> <%= comment.entry %></li>
+      </ul>
+    </ul>
+    <% end %>
+    <% else %>
+    <p>
+      Write the first comment!
+    </p>
+    <% end %>

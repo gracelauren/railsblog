@@ -1,0 +1,9 @@
+<% content_for(:title, "The Gouda Life | Post") %>
+
+<ul>
+  <% @posts.each do |post| %>
+  <li><%= post.date %> | <%= link_to post.title, post_path(post) %></li>
+  <% end %>
+</ul>
+
+<%= link_to "Create New Post", new_post_path %>

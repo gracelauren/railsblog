@@ -1,5 +1,8 @@
 <% content_for(:title, "The Gouda Life | Post") %>
 
+<%= render 'shared/header', title: "A Food Blog" %>
+
+
 <ul>
   <% @posts.each do |post| %>
   <li><%= post.date %> | <%= link_to post.title, post_path(post) %></li>

@@ -6,7 +6,7 @@
 <p><%= link_to "Delete Post", post_path(@post),
                               :data => {:confirm => "Are you sure?",
                               :method => "delete"} %></p>
-<h4><%= @post.date %> : <%= @post.description %></h4>
+<h4><%= @post.date %> : <%= @post.entry %></h4>
 <p><%= link_to "Return to All Posts", posts_path %></p>
 
 

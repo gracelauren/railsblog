@@ -10,8 +10,17 @@ This application addresses the following user stories:
 
 * As a user, I want to be able to update or delete any of my posts, so that I can revise my thoughts later.
 
+* As a user, I would like to be able to comment on a blog post, so that I can share my thoughts as well.
+
+* As a user, I would like these comments to only be displayed at the bottom of the post they belong to and not on any separate pages.
+
+* As a user, I would like to be able to edit or delete my comments, in case I made a mistake when writing them.
+
+
 * ...
 
 
 Run the programming by cloning the repository, cd-ing into folder and then running:
+<tt>bundle</tt>.
+<tt>rake db:schema:load</tt>
 <tt>rails s</tt>.

@@ -2,9 +2,12 @@
 
 <%= render('shared/header', title: @post.title) %>
 
-<p><%= link_to "Delete Post", post_path(@post),
+<p><%= link_to 'Edit', edit_post_path(@post) %> |
+  <%= link_to "Delete Post", post_path(@post),
                               :data => {:confirm => "Are you sure?",
-                              :method => "delete"} %> | <%= link_to "Return to All Posts", posts_path %> | <%= link_to "Add a Comment", new_post_comment_path(@post) %></p>
+                              :method => "delete"} %> |
+  <%= link_to "Return to All Posts", posts_path %> |
+  <%= link_to "Add a Comment", new_post_comment_path(@post) %></p>
 
 <h4><%= @post.date %> : <%= @post.entry %></h4>
 
@@ -14,7 +17,7 @@
 <ul>
   <% @post.comments.each do |comment| %>
   <li>
-    <li>  <%= comment.date %> : <%= comment.title %> |
+    <li>  <%= comment.title %> : <%= comment.date %> |
       <%= link_to "Edit", edit_post_comment_path(@post, comment) %> |
       <%= link_to "Delete", post_comment_path(@post, comment),
       :data => {:confirm => "You sure?",

@@ -2,12 +2,11 @@
 
 <%= render('shared/header', title: @post.title) %>
 
-<p><%= link_to "Add a Comment", new_post_comment_path(@post) %></p>
 <p><%= link_to "Delete Post", post_path(@post),
                               :data => {:confirm => "Are you sure?",
-                              :method => "delete"} %></p>
+                              :method => "delete"} %> | <%= link_to "Return to All Posts", posts_path %> | <%= link_to "Add a Comment", new_post_comment_path(@post) %></p>
+
 <h4><%= @post.date %> : <%= @post.entry %></h4>
-<p><%= link_to "Return to All Posts", posts_path %></p>
 
 
 <% if @post.comments.any? %>

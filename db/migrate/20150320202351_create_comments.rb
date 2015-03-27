@@ -5,6 +5,7 @@ class CreateComments < ActiveRecord::Migration
       t.column :entry, :varchar
       t.column :date, :timestamp
       t.column :post_id, :integer
+      t.integer :user_id
 
 
       t.timestamps

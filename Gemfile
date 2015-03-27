@@ -13,6 +13,7 @@ gem 'bootstrap_form'
 gem 'bootstrap-datetimepicker-rails'
 gem "paperclip", :git => "git://github.com/thoughtbot/paperclip.git"
 gem 'devise'
+gem 'protected_attributes'
 
 
 group :development do

@@ -16,7 +16,6 @@
 <h4>Comments:</h4>
 <ul>
   <% @post.comments.each do |comment| %>
-  <li>
     <li>  <%= comment.title %> : <%= comment.date %> |
       <%= link_to "Edit", edit_post_comment_path(@post, comment) %> |
       <%= link_to "Delete", post_comment_path(@post, comment),

@@ -17,7 +17,7 @@ This application addresses the following user stories:
 * As a user, I would like to be able to edit or delete my comments, in case I made a mistake when writing them.
 
 
-View the site here: https://github.com/gracelauren/railsblog
+View the site here: https://railsbloggrace.herokuapp.com/
 
 
 Run the programming by cloning the repository, cd-ing into folder and then running:

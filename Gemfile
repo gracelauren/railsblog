@@ -3,6 +3,7 @@ source 'https://rubygems.org'
 
 gem 'rails'
 gem 'pg'
+gem 'factory_girl_rails'
 gem 'sass-rails'
 gem 'uglifier'
 gem 'coffee-rails'

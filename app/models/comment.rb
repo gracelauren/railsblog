@@ -5,6 +5,8 @@ class Comment < ActiveRecord::Base
   validates :title, :presence => true
   validates :entry, :presence => true
   validates :date, :presence => true
+  attr_accessible :title, :date, :entry
+  
 
 
   default_scope {order('date DESC')}
